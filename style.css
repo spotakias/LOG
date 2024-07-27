@@ -48,7 +48,7 @@ ul {
   color: #f1f1f1;
   border-left: 5px solid #f1f1f1;
   border-right: 5px solid #f1f1f1;
-  transition: 300ms all;
+  transition: 200ms all;
 }
 
 .sidenav a.active {
