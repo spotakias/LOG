@@ -63,7 +63,7 @@ ul {
 }
 
 .main {
-  font-size: 20px; /* Increased text to enable scrolling */
+  font-size: 24px; /* Increased text to enable scrolling */
   padding: 40px 20px;
   text-wrap: balance;
 }
