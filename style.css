@@ -1,20 +1,22 @@
 * {
+  scrollbar-width: thin;
+  scrollbar-color: #161618 #818181;
+  scrollbar-gutter: auto;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 body {
   background-color: #f1f1f1;
   font-family: "Lato", sans-serif;
 }
-ul {
+
+.logo {
   text-align: left;
   align-content: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   padding-left: 16px;
-  overflow: hidden;
   color: #f1f1f1;
   background-color: #161618;
   position: fixed;
@@ -22,6 +24,34 @@ ul {
   height: 30px;
   width: 100%;
 }
+
+.onlinemode::after {
+  content: "🔘";
+  padding: 0.2rem;
+  font-size: 0.7rem;
+}
+
+.statusicon {
+  color: #818181;
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: right;
+  align-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 30px;
+}
+
+.statusicon:hover {
+  color: #f1f1f1;
+  transition: 200ms all;
+
+  .onlinemode::after {
+    content: "🟢";
+  }
+}
+
 .sidenav {
   height: 100%;
   width: 150px;
@@ -33,10 +63,13 @@ ul {
   overflow-x: hidden;
   padding-top: 30px;
 }
+
 .sidenav .fa {
   scale: 1;
+  padding-right: 7px;
 }
-.sidenav a {
+
+.tablinks {
   padding: 16px;
   text-decoration: none;
   font-size: 14px;
@@ -44,32 +77,69 @@ ul {
   display: block;
 }
 
-.sidenav a:hover {
+.sidenav .tablinks:hover {
   color: #f1f1f1;
   border-left: 5px solid #f1f1f1;
   border-right: 5px solid #f1f1f1;
   transition: 200ms all;
 }
 
-.sidenav a.active {
+.sidenav .tablinks.active {
   color: #f1f1f1;
   border-left: 5px solid #f1f1f1;
   border-right: 5px solid #f1f1f1;
 }
 
-.maincontent {
-  display: grid;
-  margin-left: 150px; /* Same as the width of the sidenav */
-}
-
 .main {
+  margin-left: 150px; /* Same as the width of the sidenav */
+  background-color: #818181;
   font-size: 24px; /* Increased text to enable scrolling */
   padding: 40px 20px;
   text-wrap: balance;
 }
 
-.sidenav i {
-  padding-right: 7px;
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #161618 #818181;
+  scrollbar-gutter: auto;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.flex-container > div {
+  color: #f1f1f1;
+  background-color: #212124;
+  min-width: 26rem;
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: left;
+  height: 20rem;
+  font-size: 20px;
+  border: 2px solid #161618;
+  border-radius: 7px;
+}
+
+.flex-container2 > div {
+  color: #f1f1f1;
+  background-color: #212124;
+  min-width: 14rem;
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: left;
+  height: 10rem;
+  font-size: 20px;
+  border: 2px solid #161618;
+  border-radius: 7px;
 }
 
 @media screen and (max-height: 450px) {
