@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f1f1f1;
+  font-family: "Lato", sans-serif;
+}
+ul {
+  text-align: left;
+  align-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  overflow: hidden;
+  color: #f1f1f1;
+  background-color: #161618;
+  position: fixed;
+  top: 0;
+  height: 30px;
+  width: 100%;
+}
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #212124;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+.sidenav .fa {
+  scale: 1;
+}
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  border-left: 5px solid #f1f1f1;
+  border-right: 5px solid #f1f1f1;
+  transition: 300ms all;
+}
+
+.main {
+  margin-left: 150px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 30px 7px;
+  text-wrap: balance;
+}
+
+.sidenav i {
+  padding-right: 7px;
+}
+
+@media screen and (max-height: 450px) {
+}
