@@ -1,2 +1,2 @@
-\\ Html / CSS / Js
-\\ Gaming app catalogue
+ -Html / CSS / Js
+ -Gaming app catalogue
