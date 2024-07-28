@@ -12,6 +12,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: #f1f1f1;
+}
 .logo {
   text-align: left;
   align-content: center;
@@ -97,17 +103,17 @@ body {
   padding: 40px 20px;
   text-wrap: balance;
 }
-
+/* HOME container*/
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
   background-color: transparent;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #161618 #818181;
+  scrollbar-color: #161618 none;
   scrollbar-gutter: auto;
 }
-
+/* NEW container*/
 .flex-container2 {
   display: flex;
   flex-wrap: wrap;
@@ -117,30 +123,36 @@ body {
 .flex-container > div {
   color: #f1f1f1;
   background-color: #212124;
-  min-width: 26rem;
-  padding: 5px;
-  margin-top: 10px;
-  margin-right: 10px;
+  min-width: 28rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0rem;
   text-align: left;
-  height: 20rem;
+  height: 21rem;
   font-size: 20px;
-  border: 2px solid #161618;
+  border: 0px solid #161618;
   border-radius: 7px;
 }
 
 .flex-container2 > div {
   color: #f1f1f1;
   background-color: #212124;
-  min-width: 14rem;
-  padding: 5px;
-  margin-top: 10px;
-  margin-right: 10px;
+  width: 12rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
   text-align: left;
-  height: 10rem;
+  height: 9rem;
   font-size: 20px;
-  border: 2px solid #161618;
+  border: 0px solid #161618;
   border-radius: 7px;
 }
 
-@media screen and (max-height: 450px) {
+.flex-container2 > div:hover {
+  scale: 1.05;
+  transition: 200ms all;
+}
+
+@media screen and (max-width: 1400px) {
 }
